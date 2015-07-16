@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Litchiware's Blog</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("nav").addClass("is-visible");
+                    $("div").addClass("is-visible");
+                });
+                $("div").click(function(){
+                    $("nav").removeClass('is-visible');
+                    $(this).removeClass('is-visible');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <nav class="js-menu sliding-menu-content">
+          <ul>
+            <li class="section"><h2>Categories</h2></li>
+            <li class="cat-item cat-item-1"><a href="http://www.onextrapixel.com/category/inspiration/" >Inspiration</a></li>
+            <li class="cat-item cat-item-3 current-cat"><a href="http://www.onextrapixel.com/category/design/" >Design</a></li>
+            <li class="cat-item cat-item-4"><a href="http://www.onextrapixel.com/category/development/" >Development</a></li>
+            <li class="cat-item cat-item-6"><a href="http://www.onextrapixel.com/category/graphics/" >Graphics</a></li>
+            <li class="cat-item cat-item-13"><a href="http://www.onextrapixel.com/category/css/" >CSS</a></li>
+            <li class="cat-item cat-item-43"><a href="http://www.onextrapixel.com/category/wordpress/" >WordPress</a></li>
+            <li class="cat-item cat-item-120"><a href="http://www.onextrapixel.com/category/social-media/" >Social Media</a></li>
+            <li class="cat-item cat-item-164"><a href="http://www.onextrapixel.com/category/articles/" >Articles</a></li>
+            <li class="cat-item cat-item-177"><a href="http://www.onextrapixel.com/category/giveaways/" >Giveaways</a></li>
+            <li class="cat-item cat-item-179"><a href="http://www.onextrapixel.com/category/toolkits/" >Toolkits</a></li>
+            <li class="cat-item cat-item-292"><a href="http://www.onextrapixel.com/category/events/" >Events</a></li>
+            <li class="section"><h2>Info</h2></li><li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li><li><a href="/write-for-us/">Write for Us</a></li>
+            <li><a href="/advertise/" rel="nofollow" target="_blank">Advertise</a></li></ul>
+        </nav>
+        <div class="js-menu-screen menu-screen"></div>
+        <button>Hello</button>
+    </body>
+</html>
